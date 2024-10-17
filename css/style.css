@@ -21,11 +21,6 @@ header {
 	height: 60px;
 }
 
-.hn {
-	position: sticky;
-	top: 0;
-}
-
 /* Logo Styles */
 .logo {
 	background-image: url(../media/Img/logo.png);
@@ -43,6 +38,13 @@ header {
 	width: 60%;
 }
 
+.search-wrapper {
+	display: none;
+}
+.basket-wrapper {
+	display: none;
+}
+
 .search-container {
 	position: relative;
 	display: flex;
@@ -51,10 +53,9 @@ header {
 	align-items: center;
 	width: 50%;
 	height: 100%;
- } 
+}
 
 .input-search {
-	background-color: aqua;
 	width: 100%;
 	border-radius: 25px;
 	padding: 10px 20px 10px 35px;
@@ -74,7 +75,7 @@ header {
 	display: flex;
 	align-items: center;
 	color: white;
-	white-space: nowrap; 
+	white-space: nowrap;
 }
 
 .account-container .fa-solid,
@@ -84,7 +85,7 @@ header {
 
 .account,
 .cart {
-	font-size: 14px; 
+	font-size: 14px;
 	color: white;
 }
 
@@ -167,26 +168,26 @@ nav {
 	border-radius: 25px;
 	cursor: pointer;
 	transition: background-color 300ms, color 300ms;
+}
 
-	&:hover {
-		background-color: #bf7c41;
-		color: white;
-	}
+.main-btn-img:hover {
+	background-color: #bf7c41;
+	color: white;
 }
 
 /* Our Concept Section */
 .our-concept {
-	text-align: center; 
-	background-color: #f4f4f4; 
+	text-align: center;
+	background-color: #f4f4f4;
 }
 
 .our-concept p {
-	font-size: 1rem; 
+	font-size: 1rem;
 }
 
 /* Flexbox Container for Concept Squares */
 .concept-row {
-	display: flex; 
+	display: flex;
 	justify-content: space-between;
 	padding: 20px 0 0 0;
 	gap: 10px;
@@ -196,111 +197,111 @@ nav {
 .square {
 	display: flex;
 	flex-direction: column;
-	align-items: center; 
-	justify-content: center; 
-	width: 32%; 
-	height: 200px; 
-	background-color: #f0f0f0; 
+	align-items: center;
+	justify-content: center;
+	width: 32%;
+	height: 200px;
+	background-color: #f0f0f0;
 }
 
 /* First Square with Different Background */
 .square-1 {
-	background-color: #f2e8c9; 
+	background-color: #f2e8c9;
 }
 
 /* Heading Style */
 .concept-heading {
-	font-size: 1.5rem; 
-	text-align: center; 
+	font-size: 1.5rem;
+	text-align: center;
 	margin: 0;
 }
 
 /* Specific Images */
 .our-img {
-	background-size: cover; 
+	background-size: cover;
 	background-position: center;
-	width: 100%; 
-	height: 100%; 
+	width: 100%;
+	height: 100%;
 }
 
 .our-img-1 {
-	background-image: url('../media/Img/image 1.jpg');
+	background-image: url('../media/Img/image-1.jpg');
 }
 .our-img-2 {
-	background-image: url('../media/Img/img3.jpg');
+	background-image: url('../media/Img/image-2.jpg');
 }
 .our-img-3 {
-	background-image: url('../media/Img/img3.jpg');
+	background-image: url('../media/Img/image-3.jpg');
 }
 .our-img-4 {
-	background-image: url('../media/Img/jackets-list.jpg');
+	background-image: url('../media/Img/image-4.jpg');
 }
 .our-img-5 {
-	background-image: url('../media/Img/image 1.jpg');
+	background-image: url('../media/Img/image-5.jpg');
 }
 
 /* Suggested Products Section */
 .suggest {
-	padding: 40px 20px; 
-	background-color: #f4f4f4; 
-	flex-direction: column; 
+	padding: 40px 20px;
+	background-color: #f4f4f4;
+	flex-direction: column;
 }
 
 .suggest-h2 {
-	font-size: 2rem; 
-	color: #333; 
+	font-size: 2rem;
+	color: #333;
 	margin-bottom: 20px;
-	text-align: center; 
+	text-align: center;
 }
 
 /* Flexbox container for suggested images */
 .suggest-images {
-	display: flex; 
-	justify-content: space-between; 
-	flex-wrap: nowrap; 
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
 }
 
 /* Container for each image and text */
 .suggest-item {
 	display: flex;
-	flex-direction: column; 
-	align-items: center; 
-	width: 23%; 
+	flex-direction: column;
+	align-items: center;
+	width: 23%;
 }
 
 /* Style for each suggested image */
 .suggest-img {
-	background-size: cover; 
-	background-position: center; 
-	width: 100%; 
-	height: 200px; 
-	border-radius: 10px; 
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 200px;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Style for the text under each image */
 .suggest-text {
-	margin-top: 10px; 
-	font-size: 1rem; 
-	text-align: center; 
+	margin-top: 10px;
+	font-size: 1rem;
+	text-align: center;
 }
 
 /* Specific Images for Suggested Products */
 .suggest-img-1 {
-	background-image: url(../media/Img/image\ 15.jpg);
+	background-image: url(../media/Img/main-jacket.jpg);
 }
 .suggest-img-2 {
-	background-image: url(../media/Img/main-jacket.jpg);
+	background-image: url(../media/Img/jacket-2.jpg);
 }
 .suggest-img-3 {
 	background-image: url(../media/Img/jacket-3.jpg);
 }
 .suggest-img-4 {
-	background-image: url(../media/Img/jacket-6.jpg);
+	background-image: url(../media/Img/jacket-4.jpg);
 }
 
 /* Media Queries for Responsiveness */
-@media (max-width: 390px) {
+@media (max-width: 768px) {
 	body {
 		padding: 0 20px;
 	}
@@ -309,38 +310,7 @@ nav {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-	}
-
-	
-
-	a {
-		color: white;
-	}
-	
-	.search-container {
-		background-color: #bf7c41;
-		width: 100%;
-		top: 55px;
-		font-size: 1em;
-	}
-	 .input-search {
-		background: #ff0000;
-	width: 80%;
-
-		
-		
-		border-radius: 25px;
-		padding: 10px 20px 10px 35px;
-		border: none;
-		font-size: 1em;
-	} 
-
-	.logo {
-		width: 60px;
-		height: 40px;
-		order: 2;
-		position: absolute;
-		left: 42%;
+		position: relative;
 	}
 
 	.burger {
@@ -349,25 +319,55 @@ nav {
 		background-color: white;
 	}
 
+	.logo {
+		width: 60px;
+		height: 40px;
+		order: 2;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
 	.sab {
+		display: none;
+	}
+
+	.search-wrapper {
 		display: flex;
-		order: 3;
+		width: 100%;
+		justify-content: center;
+		padding: 10px 0;
+	}
+
+	.search-container {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+	.basket-wrapper {
+		display: flex;
 	}
 
 	.basket-container {
-		width: 40px;
-		height: 40px;
+		color: white;
+		position: absolute;
+		top: 10px;
+		right: 25px;
 	}
 
-	.cart {
+	.input-search {
+		width: 100%;
+		padding: 10px 35px;
+		border-radius: 25px;
+		border: none;
+	}
+
+	.nav {
 		display: none;
 	}
-.nav {
-	width: 100%;
-	
-}
+
 	.nav-bar {
-		translate: 0 -150%;
+		display: none;
 		flex-direction: column;
 		position: absolute;
 		top: 60px;
@@ -379,12 +379,14 @@ nav {
 
 	.nav-bar.active {
 		display: flex;
-		translate: 0 0%;
 	}
-
 
 	.account-container {
 		display: none;
+	}
+	.basket {
+		position: absolute;
+		top: 100px;
 	}
 
 	.main-img {
