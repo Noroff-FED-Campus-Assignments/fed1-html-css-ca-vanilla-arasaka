@@ -303,6 +303,46 @@ nav {
 .suggest-img-4 {
 	background-image: url(../media/Img/jacket-4.jpg);
 }
+.footer-h {
+    color: white;
+}
+
+.footer-container {
+    background-color: black;
+    display: flex;
+    justify-content: space-between; 
+    padding: 20px;
+    color: white; 
+}
+
+.footer-wrapper {
+    flex: 1; /* Each column takes equal width */
+    margin-right: 20px;
+}
+
+
+
+.footer-h {
+    color: white;
+    margin-bottom: 10px; 
+}
+
+.footer {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
 
 /* Media Queries for Responsiveness */
 @media (max-width: 390px) {
@@ -429,5 +469,25 @@ nav {
 		height: 300px;
 	}
 	
+.footer-container {
+    
+    display: flex;
+	flex-direction: column;
+    justify-content: space-between; 
+    padding: 20px;
+    color: white; 
+}
+
+.footer-wrapper {
+    flex: 1; 
+    
+}
+.footer-h {
+    color: white;
+	margin-top: 25px;
+    margin-bottom: 10px; 
+}
+
+
 }
 
