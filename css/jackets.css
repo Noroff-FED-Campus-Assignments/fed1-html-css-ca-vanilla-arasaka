@@ -1,0 +1,32 @@
+/* Jackets css */
+
+.main-img2{
+	display: flex;
+	margin: 0;
+	padding: 100px;
+	border: 10px;
+	width: 100%;
+	height: 630px;
+	background-size: right;
+	background-position: right;
+	background-color: #0f2624;
+}
+
+
+.main-img2 h2{
+	display: flex;
+	color: white;
+	
+	
+}
+
+.main-img2 p{
+	display: flex;
+	color: white;
+}
+
+.main-img2{
+	display: flex;
+	justify-content: right;
+	
+}
