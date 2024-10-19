@@ -1,11 +1,11 @@
-@import "jackets.css";
+@import 'jackets.css';
+@import 'contact.css';
 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
-
 
 /* Body Styles */
 body {
@@ -72,7 +72,6 @@ header {
 	font-size: 1rem;
 }
 
-
 .account-container,
 .basket-container {
 	display: flex;
@@ -98,7 +97,6 @@ header {
 	cursor: pointer;
 }
 
-
 nav {
 	background-color: white;
 }
@@ -107,7 +105,7 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 1.6rem;
+	/* padding: 1.6rem; */
 	position: relative;
 	z-index: 200;
 }
@@ -307,44 +305,40 @@ nav {
 	background-image: url(../media/Img/jacket-4.jpg);
 }
 .footer-h {
-    color: white;
+	color: white;
 }
 
 .footer-container {
-    background-color: black;
-    display: flex;
-    justify-content: space-between; 
-    padding: 20px;
-    color: white; 
+	background-color: black;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	color: white;
 }
 
 .footer-wrapper {
-    flex: 1; /* Each column takes equal width */
-    margin-right: 20px;
+	flex: 1; /* Each column takes equal width */
+	margin-right: 20px;
 }
 
-
-
 .footer-h {
-    color: white;
-    margin-bottom: 10px; 
+	color: white;
+	margin-bottom: 10px;
 }
 
 .footer {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+	list-style: none;
+	padding: 0;
+	margin: 0;
 }
 
-
-
 .footer a {
-    color: white;
-    text-decoration: none;
+	color: white;
+	text-decoration: none;
 }
 
 .footer a:hover {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 
 /* Media Queries for Responsiveness */
@@ -378,7 +372,6 @@ nav {
 	.nav-bar.active {
 		display: flex;
 		translate: 0 0%;
-		
 	}
 	.burger {
 		display: flex;
@@ -428,7 +421,6 @@ nav {
 		border: none;
 	}
 
-
 	.account-container {
 		display: none;
 	}
@@ -471,25 +463,21 @@ nav {
 	.suggest-img {
 		height: 300px;
 	}
-	
-.footer-container {
-    
-    display: flex;
-	flex-direction: column;
-    justify-content: space-between; 
-    padding: 20px;
-    color: white; 
-}
 
-.footer-wrapper {
-    flex: 1; 
-    
-}
-.footer-h {
-    color: white;
-	margin-top: 25px;
-    margin-bottom: 10px; 
-}
+	.footer-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 20px;
+		color: white;
+	}
 
-
+	.footer-wrapper {
+		flex: 1;
+	}
+	.footer-h {
+		color: white;
+		margin-top: 25px;
+		margin-bottom: 10px;
+	}
 }
