@@ -1,6 +1,8 @@
-@import 'jackets.css';
+@import url('/path/to/your/burger-menu.css');
+@import 'jackets.css'; 
 @import 'contact.css';
 @import 'about.css';
+ @import 'confirm.css';
 
 
 * {
@@ -24,6 +26,10 @@ header {
 	align-items: center;
 	justify-content: space-between;
 	height: 60px;
+}
+.hn{
+	position: sticky;
+  top: 0;
 }
 
 /* Logo Styles */
@@ -74,6 +80,7 @@ header {
 	font-size: 1rem;
 }
 
+
 .account-container,
 .basket-container {
 	display: flex;
@@ -99,6 +106,7 @@ header {
 	cursor: pointer;
 }
 
+
 nav {
 	background-color: white;
 }
@@ -107,7 +115,7 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	/* padding: 1.6rem; */
+	
 	position: relative;
 	z-index: 200;
 }
@@ -311,6 +319,7 @@ nav {
 }
 
 .footer-container {
+	
 	background-color: black;
 	display: flex;
 	justify-content: space-between;
@@ -329,6 +338,7 @@ nav {
 }
 
 .footer {
+	
 	list-style: none;
 	padding: 0;
 	margin: 0;
@@ -343,6 +353,9 @@ nav {
 	text-decoration: underline;
 }
 
+
+
+
 /* Media Queries for Responsiveness */
 @media (max-width: 390px) {
 	body {
@@ -355,6 +368,8 @@ nav {
 		align-items: center;
 		position: relative;
 	}
+	
+
 
 	.nav {
 		display: none;
@@ -374,6 +389,7 @@ nav {
 	.nav-bar.active {
 		display: flex;
 		translate: 0 0%;
+		
 	}
 	.burger {
 		display: flex;
@@ -423,6 +439,7 @@ nav {
 		border: none;
 	}
 
+
 	.account-container {
 		display: none;
 	}
@@ -465,7 +482,6 @@ nav {
 	.suggest-img {
 		height: 300px;
 	}
-
 	.footer-container {
 		display: flex;
 		flex-direction: column;
@@ -482,4 +498,6 @@ nav {
 		margin-top: 25px;
 		margin-bottom: 10px;
 	}
+	
 }
+
