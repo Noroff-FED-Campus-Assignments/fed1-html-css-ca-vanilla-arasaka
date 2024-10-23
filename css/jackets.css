@@ -53,6 +53,10 @@
   color: grey;
 }
 
+.j-product:hover {
+  color: grey;
+}
+
 .fa-solid {
   padding: 5px;
   font-size: 13px;
