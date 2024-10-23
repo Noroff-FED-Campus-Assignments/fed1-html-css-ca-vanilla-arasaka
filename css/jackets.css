@@ -157,12 +157,12 @@
   flex-wrap: wrap;
   
 }
-.jacket-item h3{
+.jacket-h{
   display: flex;
   justify-content: center;
   padding-bottom: 10px;
 }
-.jacket-item p{
+.jacket-p{
   display: flex;
   justify-content: center;
   padding-top: 10px;
