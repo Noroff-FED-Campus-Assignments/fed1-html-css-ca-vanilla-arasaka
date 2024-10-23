@@ -1,0 +1,212 @@
+/* jackets css */
+
+/* hero */
+.jackets-container {
+  display: flex;
+}
+.jackets-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  /* border: 50px solid #0f2624; */
+  justify-content: left;
+  background-color: #0f2624;
+  color: white;
+  padding-top: 42px;
+  padding-left: 50px;
+  padding-bottom: 109px;
+  padding-right: 50px;
+}
+.jackets-img {
+  background-image: url(../media/Img/image\ -jackets.jpg);
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: right;
+}
+
+/* main */
+
+.jackets-main-container {
+  /* border: 1px solid black; */
+}
+
+/* Directory */
+.jackets-dir {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  /* border: 10px solid black; */
+}
+
+.j-home:hover {
+  color: grey;
+}
+
+.j-man:hover {
+  color: grey;
+}
+
+.j-jackets:hover {
+  color: grey;
+}
+
+.j-product:hover {
+  color: grey;
+}
+
+.fa-solid {
+  padding: 5px;
+  font-size: 13px;
+}
+
+/* Jackets Selection */
+
+
+.selection-container{
+  display: flex;
+  flex-direction: column;
+  /* border: 10px solid black; */
+  /* background-color: rgb(238, 237, 236); */
+  width: 200px;
+  
+}
+.jackets-category {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+}
+.jackets-category h1{
+  display: flex;
+  font-weight: bolder;
+}
+
+.jackets-category p{
+  font-size: x-large;
+  font-weight: 1000;
+
+}
+
+.fa-chevron-up {
+  display: flex;
+  justify-content: flex-end;
+}
+.fa-chevron-down {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 5px;
+}
+
+.jackets-sizes {
+  display: grid;
+  grid-template-rows: 35px 35px;
+  grid-template-columns: 60px 60px 60px;
+  grid-gap: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  /* align-items: center; */
+}
+
+
+#griditem {
+  border: 2px solid black;
+  /* padding-left: 21px; */
+  padding-top: 5px;
+  font-weight: bold;
+  
+}
+
+.grid-item1 {
+  padding-left: 18px;
+}
+.grid-item2 {
+  padding-left: 23.5px;
+}
+.grid-item3 {
+  padding-left: 20.5px;
+}
+.grid-item4 {
+  padding-left: 23px;
+}
+.grid-item5 {
+  padding-left: 18px;
+}
+.grid-item6 {
+  padding-left: 13px;
+}
+
+.grid-item1:hover {
+  background-color: grey;
+}
+.grid-item2:hover {
+  background-color: grey;
+}
+.grid-item3:hover {
+  background-color: grey;
+}
+.grid-item4:hover {
+  background-color: grey;
+}
+.grid-item5:hover {
+  background-color: grey;
+}
+.grid-item6:hover {
+  background-color: grey;
+}
+
+.jackets-products {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.jacket-h{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+.jacket-p{
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.jacket-item {
+  display: flex;
+  border: 1px solid black;
+  background-color: white;
+  font-weight: bold;
+  
+
+}
+
+.jacket2{
+
+  background-position: right;
+}
+
+
+
+.jackets-color-container{
+  display: flex;
+  justify-content: center;
+  gap: 13px;
+  width: 100%;
+  height: 24px;
+  /* border: 1px solid black; */
+
+}
+.jackets-color-btn-black{
+  width: 24px;
+  height: 24px;
+  background-color: black;
+
+}
+.jackets-color-btn-grey{
+  width: 24px;
+  height: 24px;
+  background-color: #44443b;
+
+}
+
