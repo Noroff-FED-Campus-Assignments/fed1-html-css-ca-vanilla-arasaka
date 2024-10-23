@@ -3,6 +3,8 @@
 @import 'contact.css';
 @import 'about.css';
  @import 'confirm.css';
+ @import 'checkout.css';
+ 
 
 
 * {
@@ -10,12 +12,21 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+html{
+	background-color: #f4f4f4;
+	max-width: 1300px;
+	width: 100%;
+	margin: auto;
+
+}
+	
 
 /* Body Styles */
 body {
-	padding: 0 15%;
-	background-color: #f4f4f4;
 	font-family: 'Open Sans', sans-serif;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
 
 /* Header Styles */
@@ -325,6 +336,7 @@ nav {
 	justify-content: space-between;
 	padding: 20px;
 	color: white;
+	margin-top: auto;
 }
 
 .footer-wrapper {
