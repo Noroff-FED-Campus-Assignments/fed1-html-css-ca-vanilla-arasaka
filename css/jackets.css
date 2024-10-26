@@ -27,11 +27,6 @@
 }
 
 /* main */
-
-.jackets-main-container {
-  /* border: 1px solid black; */
-}
-
 /* Directory */
 .jackets-dir {
   display: flex;
@@ -63,19 +58,28 @@
 }
 
 /* Jackets Selection */
-
+.jackets-main-container {
+  display: flex;
+  /* border: 2px solid; */
+}
 
 .selection-container{
   display: flex;
   flex-direction: column;
-  /* border: 10px solid black; */
-  /* background-color: rgb(238, 237, 236); */
   width: 200px;
+  justify-content: left;
+}
+
+.sort-by{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  left: 818px;
+  width: 135px;
+  border: 1px solid black;
   
 }
-.jackets-category {
-  display: flex;
-  flex-direction: column;
+.jackets-category{
   padding: 8px;
 }
 .jackets-category h1{
@@ -156,10 +160,37 @@
   background-color: grey;
 }
 
+/* Products */
+
 .jackets-products {
   display: flex;
+  gap: 2rem;
+  flex-direction: row;
   flex-wrap: wrap;
+  position: relative;
+  padding: 2rem;
+  width: 900px;
+  top: 70px;
+}
+.jackets-products img{
+  display: flex;
+  max-width: 220px;
+  height: auto;
+
+}
+
+.jacket-item {
+  display: flex;
+  border: 1px solid black;
+  background-color: white;
+  font-weight: bold;
   
+}
+
+.jacket2 h3{
+  display: flex;
+  justify-content: center;
+  padding-left: 1.5rem;
 }
 .jacket-h{
   display: flex;
@@ -172,29 +203,18 @@
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.jacket-item {
-  display: flex;
-  border: 1px solid black;
-  background-color: white;
-  font-weight: bold;
-  
 
-}
-
-.jacket2{
-
-  background-position: right;
-}
-
-
+/* color btns */
 
 .jackets-color-container{
+
+
   display: flex;
   justify-content: center;
   gap: 13px;
   width: 100%;
   height: 24px;
-  /* border: 1px solid black; */
+ 
 
 }
 .jackets-color-btn-black{
