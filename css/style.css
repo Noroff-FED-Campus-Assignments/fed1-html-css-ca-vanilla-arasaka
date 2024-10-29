@@ -1,18 +1,11 @@
 @import 'jackets.css';
 @import 'contact.css';
 @import 'about.css';
-<<<<<<< HEAD
 @import 'confirm.css';
 @import 'checkout.css';
 @import 'cart.css';
 @import 'jacket-detalis.css';
-=======
- @import 'confirm.css';
- @import 'checkout.css';
- @import 'cart.css';
- @import 'ProductDetails.css';
 
->>>>>>> 6e03f944b39eb8f7d96b225e438a888bfe0ec160
 
 * {
 	margin: 0;
