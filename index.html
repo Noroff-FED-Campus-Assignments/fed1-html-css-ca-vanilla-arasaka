@@ -11,6 +11,11 @@
     <title>Rainyday's</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -80,10 +85,46 @@
         </nav>
 </div>
 
-        <div class="main-img">
+        <!-- <div class="main-img">
             <button class="main-btn-img">CHECK OUR OFFER</button>
+        </div> -->
+
+    <div class="slideshow-container">
+    
+        <!-- Slide 1 -->
+        <div class="slide fade">
+            <img src="./media/Img/main.jpg" alt="Slide 1" class="slide-image">
+            <a href="jackets.html"><button class="offer-btn">Check Our Offer</button></a>
+        </div>
+    
+        <!-- Slide 2 -->
+        <div class="slide fade">
+            <img src="./media/Img/image 24.jpg" alt="Slide 2" class="slide-image">
+            <a href="jackets.html"><button class="offer-btn">Check Our Offer</button></a>
+        </div>
+    
+        <!-- Slide 3 -->
+        <div class="slide fade">
+            <img src="./media/Img/image-5.jpg" alt="Slide 3" class="slide-image">
+            <a href="jackets.html"><button class="offer-btn">Check Our Offer</button></a>
+        </div>
+        
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        
+        
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
         </div>
 
+        
+        
+        
         <div class="our-concept">
             <div class="concept-row">
                 <div class="square square-1">
@@ -91,21 +132,22 @@
                     <p>Each concept has its focus on nature where quality meets challenge</p>
                 </div>
                 <div class="square">
-                    <div class="our-img our-img-1"></div>
-                </div>
+                  <img src="./media/Img/image-1.jpg" alt="Image of walking around mountains " class="our-img" >
+                  </div>
+                
                 <div class="square">
-                    <div class="our-img our-img-2"></div>
+                <img src="./media/Img/image-2.jpg" alt="Image of walking around mountains" class="our-img">
                 </div>
             </div>
             <div class="concept-row">
                 <div class="square">
-                    <div class="our-img our-img-3"></div>
+                    <img src="./media/Img/image-3.jpg" alt="Image of walking around mountains" class="our-img">
                 </div>
                 <div class="square">
-                    <div class="our-img our-img-4"></div>
+                    <img src="./media/Img/image-4.jpg" alt="Image of walking around mountains" class="our-img">
                 </div>
                 <div class="square">
-                    <div class="our-img our-img-5"></div>
+                    <img src="./media/Img/image-5.jpg" alt="Image of walking around mountains" class="our-img">
                 </div>
             </div>
         </div>
@@ -114,25 +156,27 @@
             <h2 class="suggest-h2">SUGGESTED PRODUCTS</h2>
             <div class="suggest-images">
                 <div class="suggest-item">
-                    <div class="suggest-img suggest-img-1"></div>
+                    <img src="./media/Img/main-jacket.jpg" alt="image of jacket" class="suggest-img">
+                    
+
                     <p class="suggest-text">WOLFHOUND Hoodie 2799kr</p>
                     <button class="add-to-cart-btn" data-item-name="WOLFHOUND Hoodie" data-item-price="2799">Add to
                         Cart</button>
                 </div>
                 <div class="suggest-item">
-                    <div class="suggest-img suggest-img-2"></div>
+                    <img src="./media/Img/jacket-2.jpg" alt="image of jacket" class="suggest-img">
                     <p class="suggest-text">PILGRIM Anorak Jacket 2599kr</p>
                     <button class="add-to-cart-btn" data-item-name="WOLFHOUND Hoodie" data-item-price="2799">Add to
                         Cart</button>
                 </div>
                 <div class="suggest-item">
-                    <div class="suggest-img suggest-img-3"></div>
+                    <img src="./media/Img/jacket-3.jpg" alt="image of jacket" class="suggest-img">
                     <p class="suggest-text">DURACANVAS Jacket 2999kr</p>
                     <button class="add-to-cart-btn" data-item-name="WOLFHOUND Hoodie" data-item-price="2799">Add to
                         Cart</button>
                 </div>
                 <div class="suggest-item">
-                    <div class="suggest-img suggest-img-4"></div>
+                    <img src="./media/Img/jacket-4.jpg" alt="image of jacket" class="suggest-img">
                     <p class="suggest-text">Silence Proshell Jacket 1799kr</p>
                     <button class="add-to-cart-btn" data-item-name="WOLFHOUND Hoodie" data-item-price="2799">Add to
                         Cart</button>
@@ -226,6 +270,19 @@
                     addToCart(itemName, itemPrice);
                 });
             });
+
+
+           let slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                const slides = document.querySelectorAll('.slide');
+                slides.forEach((slide) => (slide.style.display = 'none'));
+                slideIndex++;
+                if (slideIndex > slides.length) { slideIndex = 1; }
+                slides[slideIndex - 1].style.display = 'block';
+                setTimeout(showSlides, 5000); 
+            }
         </script>
 
 

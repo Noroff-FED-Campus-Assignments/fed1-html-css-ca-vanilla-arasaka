@@ -200,7 +200,7 @@
                 <label class="agreement-terms" for="terms">I do agree with Terms and Conditions</label>
             </div>
 
-            <button class="confirm-button">CONFIRM AND PAY</button>
+            <a href="confirm.html"><button class="confirm-button">CONFIRM AND PAY</button></a>
         </div>
     </div>
 
@@ -243,7 +243,6 @@
         </div>
     </footer>
 
-    <script src="/path/to/your/burger-menu.js"></script>
     <script>
 
         const burger = document.getElementById('burger');
@@ -252,6 +251,64 @@
         burger.addEventListener('click', () => {
             navBar.classList.toggle('active');
         });
+
+
+        const basketToggle = document.getElementById('basket-toggle');
+        const cartDetails = document.getElementById('cart-details');
+        let cartCount = 0;
+        let cartItems = [];
+
+        basketToggle.addEventListener('click', () => {
+            cartDetails.classList.toggle('active');
+        });
+
+        // Add to Cart function
+        function addToCart(itemName, itemPrice) {
+            cartCount++;
+            cartItems.push({ name: itemName, price: itemPrice });
+            updateCartDisplay();
+        }
+
+        // Update Cart Display
+        function updateCartDisplay() {
+            const cartItemsContainer = document.getElementById('cart-items');
+            const cartTotalPrice = document.getElementById('cart-total-price');
+            let total = 0;
+
+            cartItemsContainer.innerHTML = '';
+            cartItems.forEach(item => {
+                const itemElement = document.createElement('div');
+                itemElement.classList.add('cart-item');
+                itemElement.innerHTML = `<p>${item.name} - ${item.price} kr</p>`;
+                cartItemsContainer.appendChild(itemElement);
+                total += item.price;
+            });
+            cartTotalPrice.textContent = total;
+        }
+        document.querySelector(".basket-wrapper").addEventListener("click", function () {
+            document.querySelector(".cart-details").classList.toggle("active");
+        });
+        // Add-to-Cart Button Functionality
+        document.querySelectorAll('.add-to-cart-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const itemName = button.getAttribute('data-item-name');
+                const itemPrice = parseInt(button.getAttribute('data-item-price'));
+                addToCart(itemName, itemPrice);
+            });
+        });
+
+
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            const slides = document.querySelectorAll('.slide');
+            slides.forEach((slide) => (slide.style.display = 'none'));
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1; }
+            slides[slideIndex - 1].style.display = 'block';
+            setTimeout(showSlides, 5000);
+        }
     </script>
 
 

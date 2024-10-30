@@ -85,7 +85,8 @@
     <div class="main-cart-container">
         <h1 class="main-cart-h">CART</h1>
         <div class="main-cart-item">
-            <div class="main-cart-img"></div>
+            <img class="main-cart-img" src="./media/Img/main-jacket.jpg" alt="image of jacket">
+
             <div class="main-item-details">
                 <h2 class="main-item-details-h2">PILGRIM ANORAK JACKET</h2>
                 <p><strong>COLOUR :</strong> DIRTY GREEN</p>
@@ -101,112 +102,123 @@
             </div>
             <div class="price">
                 <p>PRICE</p>
-                <h2>2999,-</h2>
+                <span class="price-item"><strong>2999,-</strong></span>
             </div>
             <div class="remove">
                 <a href="#">REMOVE</a>
             </div>
         </div>
-    
+
         <div class="main-cart-summary">
-            <p><strong>Total price</strong></p>
-            <h2>2999,-</h2>
-            <p>MVA included (30%)</p>
-            <a href="checkout.html"><button class="main-cart-checkout-btn">PROCEED TO CHECKOUT</button></a>
+            <div class="left-options">
+                <p class="empty-cart">EMPTY CART</p>
+            </div>
+            <div class="right-options">
+                <div class="cart-actions">
+                    <p class="update-cart">UPDATE CART</p>
+                    <p class="continue-shopping">CONTINUE SHOPPING</p>
+                </div>
+                <p class="price">
+                    <strong>Total price:</strong> <span><strong>2999,-</strong></span>
+                </p>
+                <p class="mva">MVA included (30%)</p>
+                <a href="checkout.html">
+                    <button class="main-cart-checkout-btn">PROCEED TO CHECKOUT</button>
+                </a>
+            </div>
         </div>
     </div>
 
 
 
+    <footer class="footer-container">
+        <div class="footer-wrapper">
+            <h3 class="footer-h">COMPANY</h3>
+            <ul class="footer">
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Our services</a></li>
+                <li><a href="#">Privacy policy</a></li>
+            </ul>
+        </div>
 
-<footer class="footer-container">
-    <div class="footer-wrapper">
-        <h3 class="footer-h">COMPANY</h3>
-        <ul class="footer">
-            <li><a href="about.html">About us</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="#">Our services</a></li>
-            <li><a href="#">Privacy policy</a></li>
-        </ul>
-    </div>
+        <div class="footer-wrapper">
+            <h3 class="footer-h">Help and support</h3>
+            <ul class="footer">
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Shipping</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Status</a></li>
+                <li><a href="#">Payment</a></li>
+            </ul>
+        </div>
 
-    <div class="footer-wrapper">
-        <h3 class="footer-h">Help and support</h3>
-        <ul class="footer">
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Shipping</a></li>
-            <li><a href="#">Returns</a></li>
-            <li><a href="#">Status</a></li>
-            <li><a href="#">Payment</a></li>
-        </ul>
-    </div>
-
-    <div class="footer-wrapper">
-        <h3 class="footer-h">Follow us</h3>
-        <ul class="footer">
-            <li><a href="cart.html">Facebook</a></li>
-            <li><a href="checkout.html">Instagram</a></li>
-            <li><a href="confirm.html">X</a></li>
-        </ul>
-    </div>
-</footer>
-
-
-<script>
-
-    const burger = document.getElementById('burger');
-    const navBar = document.getElementById('nav-bar');
-
-    burger.addEventListener('click', () => {
-        navBar.classList.toggle('active');
-    });
+        <div class="footer-wrapper">
+            <h3 class="footer-h">Follow us</h3>
+            <ul class="footer">
+                <li><a href="cart.html">Facebook</a></li>
+                <li><a href="checkout.html">Instagram</a></li>
+                <li><a href="confirm.html">X</a></li>
+            </ul>
+        </div>
+    </footer>
 
 
-    const basketToggle = document.getElementById('basket-toggle');
-    const cartDetails = document.getElementById('cart-details');
-    let cartCount = 0;
-    let cartItems = [];
+    <script>
 
-    basketToggle.addEventListener('click', () => {
-        cartDetails.classList.toggle('active');
-    });
+        const burger = document.getElementById('burger');
+        const navBar = document.getElementById('nav-bar');
 
-    // Add to Cart function
-    function addToCart(itemName, itemPrice) {
-        cartCount++;
-        cartItems.push({ name: itemName, price: itemPrice });
-        updateCartDisplay();
-    }
-
-    // Update Cart Display
-    function updateCartDisplay() {
-        const cartItemsContainer = document.getElementById('cart-items');
-        const cartTotalPrice = document.getElementById('cart-total-price');
-        let total = 0;
-
-        cartItemsContainer.innerHTML = '';
-        cartItems.forEach(item => {
-            const itemElement = document.createElement('div');
-            itemElement.classList.add('cart-item');
-            itemElement.innerHTML = `<p>${item.name} - ${item.price} kr</p>`;
-            cartItemsContainer.appendChild(itemElement);
-            total += item.price;
+        burger.addEventListener('click', () => {
+            navBar.classList.toggle('active');
         });
-        cartTotalPrice.textContent = total;
-    }
-    document.querySelector(".basket-wrapper").addEventListener("click", function () {
-        document.querySelector(".cart-details").classList.toggle("active");
-    });
-    // Add-to-Cart Button Functionality
-    document.querySelectorAll('.add-to-cart-btn').forEach(button => {
-        button.addEventListener('click', () => {
-            const itemName = button.getAttribute('data-item-name');
-            const itemPrice = parseInt(button.getAttribute('data-item-price'));
-            addToCart(itemName, itemPrice);
-        });
-    });
 
-    const cart = {
+
+        const basketToggle = document.getElementById('basket-toggle');
+        const cartDetails = document.getElementById('cart-details');
+        let cartCount = 0;
+        let cartItems = [];
+
+        basketToggle.addEventListener('click', () => {
+            cartDetails.classList.toggle('active');
+        });
+
+        // Add to Cart function
+        function addToCart(itemName, itemPrice) {
+            cartCount++;
+            cartItems.push({ name: itemName, price: itemPrice });
+            updateCartDisplay();
+        }
+
+        // Update Cart Display
+        function updateCartDisplay() {
+            const cartItemsContainer = document.getElementById('cart-items');
+            const cartTotalPrice = document.getElementById('cart-total-price');
+            let total = 0;
+
+            cartItemsContainer.innerHTML = '';
+            cartItems.forEach(item => {
+                const itemElement = document.createElement('div');
+                itemElement.classList.add('cart-item');
+                itemElement.innerHTML = `<p>${item.name} - ${item.price} kr</p>`;
+                cartItemsContainer.appendChild(itemElement);
+                total += item.price;
+            });
+            cartTotalPrice.textContent = total;
+        }
+        document.querySelector(".basket-wrapper").addEventListener("click", function () {
+            document.querySelector(".cart-details").classList.toggle("active");
+        });
+        // Add-to-Cart Button Functionality
+        document.querySelectorAll('.add-to-cart-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const itemName = button.getAttribute('data-item-name');
+                const itemPrice = parseInt(button.getAttribute('data-item-price'));
+                addToCart(itemName, itemPrice);
+            });
+        });
+
+        const cart = {
             items: [],
             addItem(name, price) {
                 const existingItem = this.items.find(item => item.name === name);
@@ -254,7 +266,7 @@
                 input.value = button.textContent === '+' ? currentQuantity + 1 : Math.max(currentQuantity - 1, 1);
             });
         });
-</script>
+    </script>
 
 
 </body>
