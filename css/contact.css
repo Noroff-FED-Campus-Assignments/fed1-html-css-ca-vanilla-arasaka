@@ -86,7 +86,7 @@
 }
 /* phone-need to change pic position */
 
-@media (max-width: 390px) {
+@media (max-width: 592px) {
 	.contact-container {
 		padding: 0 30px;
 		display: flex;

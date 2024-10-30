@@ -159,7 +159,7 @@
 }
 
 
-@media (max-width: 390px) {
+@media (max-width: 592px) {
     .product-page-jacket-detalis {
         flex-direction: column; 
         padding: 10px; 
