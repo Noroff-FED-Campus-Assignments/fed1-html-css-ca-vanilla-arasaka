@@ -1,7 +1,9 @@
 .about-h {
+	font-family: 'Anton', 'Open Sans', sans-serif;
 	padding-top: 50px;
+
 	padding-bottom: 20px;
-	font-size: 2rem;
+	font-size: 3rem;
 }
 
 .about-img {
@@ -13,10 +15,10 @@
 }
 
 .about-h2 {
-	padding: 50px 100px 30px 100px;
+	padding: 50px 300px 30px 300px;
 }
 .about-text {
-	padding: 30px 100px 30px 100px;
+	padding: 30px 300px 30px 300px;
 }
 .about-h3 {
 	padding-bottom: 80px;
@@ -33,8 +35,12 @@
 		height: 400px;
 	}
 
-	.about-h2,
+	.about-h2{
+		font-size: 1rem;
+		padding: 20px 15px;
+	}
 	.about-text {
+
 		padding: 20px 15px;
 	}
 

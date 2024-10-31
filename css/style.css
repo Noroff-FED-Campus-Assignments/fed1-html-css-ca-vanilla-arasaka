@@ -417,20 +417,26 @@ nav {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	
 	width: 32%;
 	height: 300px;
 	
 	
 }
 
+
+
 .square-1 {
 	background-color: #f2e8c9;
+	padding: 30px;
+
 }
 
 .concept-heading {
-	font-size: 1.5rem;
+	font-size: 3rem;
 	text-align: center;
-	margin: 0;
+	font-family: 'Anton', 'Open Sans', sans-serif;
+	margin-bottom: 10px;
 }
 
 .our-img {
@@ -451,8 +457,11 @@ nav {
 }
 
 .suggest-h2 {
+	display: flex;
+	
 	font-size: 2rem;
-	color: #333;
+	font-family: 'Anton', 'Open Sans', sans-serif;
+	 
 	margin-bottom: 20px;
 	
 }
@@ -495,6 +504,11 @@ nav {
 	width: 50%;
 	padding: 5px;
 }
+.add-to-cart-btn:hover{
+	background-color: #e68a00 
+
+}
+
 
 .footer-container {
 	background-color: black;
@@ -533,7 +547,7 @@ nav {
 	text-decoration: underline;
 }
 
-@media (max-width: 592px) {
+@media (max-width: 690px) {
 	body {
 		padding: 0 20px;
 	}
