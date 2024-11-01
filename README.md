@@ -9,8 +9,8 @@ This bootstrap template is intended to help you deliever a amazing website which
 <!-- You must replace these links -->
 
 - [Brief](https://noroff.sharepoint.com/:b:/s/FED1OSL24/EXvJ9TMGmU9Fsok1mQq1H08BKzQaheKEX5-p2e9czBsIdQ?e=TDbpCH)
-- [Design](_LINK_TO_FIGMA_)
-- [Production deploy](_LINK_TO_WEBSITE_)
+- [Design]( https://www.figma.com/design/1FGdCSiEBd0uZlyHFGkNzu/Rainyday's?node-id=0-1&t=fWcygsCy3vWOJmoi-1_)
+- [Production deploy](_https://wojandsim.netlify.app/_)
 - [Deployment CI](_LINK_TO_NETLIFY_VERCEL_DASHBOARD_)
 
 ## Deployment
@@ -24,6 +24,9 @@ You can update your deployment pipeling by editing the [vercel.json](https://ver
 
 _ADD_YOUR_REPORT_HERE_
 
+https://docs.google.com/document/d/1m7xxev-ZsbVatmDAdn9yP-jMoxguEkIG33E833IoI9M/edit?usp=sharing
+
+
 ## Getting Started
 
 In the project directory, you can run:
@@ -34,24 +37,24 @@ In the project directory, you can run:
 
 All of these todo's must be done to pass the asssignment.
 
-- [ ] The project has a readme with a link to the live site and a link to the figma design.
+- [X] The project has a readme with a link to the live site and a link to the figma design.
 - [ ] The project has an publically accessible git repository.
-- [ ] The project has a live site (Can be hosted on Netlify or vercel for free).
-- [ ] The project has a rationale document that explains the design decisions you made.
-- [ ] Your last commit must be before your deadline.
+- [X] The project has a live site (Can be hosted on Netlify or vercel for free).
+- [X] The project has a rationale document that explains the design decisions you made.
+- [X] Your last commit must be before your deadline.
 - [ ] You may use a build tool such as Vite, Parcel but not a framework like Gatsby or Next.js.
-- [ ] The project has been submitted on Moodle
+- [X] The project has been submitted on Moodle
 
 ## Checklist
 
 Make sure you go through this checklist before submitting your project to Moodle.
 
-- [ ] All pages have a meta description.
-- [ ] All pages have a valid title.
-- [ ] All pages import the correct css files.
-- [ ] All pages import the correct JS file.
-- [ ] Input fields have the following attributes;
-- [ ] All images have an alt tag;
+- [X] All pages have a meta description.
+- [X] All pages have a valid title.
+- [X] All pages import the correct css files.
+- [X] All pages import the correct JS file.
+- [X] Input fields have the following attributes;
+- [X] All images have an alt tag;
   - [ ] A name,
   - [ ] A placeholder,
   - [ ] A aria-describedby,
@@ -59,19 +62,19 @@ Make sure you go through this checklist before submitting your project to Moodle
 - [ ] I have not copied Javascript code.
 - [ ] I have not used a Javascript library.
 - [ ] Removed all unused files.
-- [ ] Named all images properly.
-- [ ] Committed all my code to github.
-- [ ] My repo is publically viewable.
-- [ ] I've submitted/ written a report.
-- [ ] I've removed all todo notes in code.
+- [X] Named all images properly.
+- [X] Committed all my code to github.
+- [X] My repo is publically viewable.
+- [X] I've submitted/ written a report.
+- [X] I've removed all todo notes in code.
 - [ ] I've removed all console logs in code.
-- [ ] Code is formatted correctly.
-- [ ] There are no red underlines in VSCode.
-- [ ] There are no error messages in the terminal when I run the project.
-- [ ] My code is indented correctly.
-- [ ] I've checked my report for grammer & spelling using grammerly or chatGPT
+- [X] Code is formatted correctly.
+- [X] There are no red underlines in VSCode.
+- [X] There are no error messages in the terminal when I run the project.
+- [X] My code is indented correctly.
+- [X] I've checked my report for grammer & spelling using grammerly or chatGPT
 - [ ] I've used used [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/)
-- [ ] I've checked off every todo in this README.
+- [X] I've checked off every todo in this README.
 
 ## Brief
 
