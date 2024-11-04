@@ -28,6 +28,7 @@
     <script src="myscripts.js"></script>
 </head>
 
+
 <body>
     <div class="hn">
         <header>
@@ -81,113 +82,65 @@
         <nav>
             <ul class="nav-bar" id="nav-bar">
                 <li><a href="index.html">HOME</a></li>
-                <li><a href="jackets.html">NEW PRODUCT</a></li>
-                <li><a href="jackets.html">WOMEN</a></li>
+                <li><a href="#">NEW PRODUCT</a></li>
+                <li><a href="#">WOMEN</a></li>
                 <li><a href="jackets.html">MEN</a></li>
-                <li><a href="jackets.html">EQUIPMENT</a></li>
-                <li><a href="jackets.html">ACCESSORIES</a></li>
+                <li><a href="#">EQUIPMENT</a></li>
+                <li><a href="#">ACCESSORIES</a></li>
             </ul>
         </nav>
     </div>
-
-    <!-- <div class="main-img">
-            <button class="main-btn-img">CHECK OUR OFFER</button>
-        </div> -->
-
-    <div class="slideshow-container">
-
-        <!-- Slide 1 -->
-        <div class="slide fade">
-            <img src="./media/Img/main.jpg" alt="Slide 1" class="slide-image">
-            <a href="jackets.html"><button class="offer-btn">Check Our Offer</button></a>
-        </div>
-
-        <!-- Slide 2 -->
-        <div class="slide fade">
-            <img src="./media/Img/image 24.jpg" alt="Slide 2" class="slide-image">
-            <a href="jackets.html"><button class="offer-btn">Check Our Offer</button></a>
-        </div>
-
-        <!-- Slide 3 -->
-        <div class="slide fade">
-            <img src="./media/Img/image-5.jpg" alt="Slide 3" class="slide-image">
-            <a href="jackets.html"><button class="offer-btn">Check Our Offer</button></a>
-        </div>
-
-
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <div class="breadcrumb">
+        <a href="index.html">Home</a> &gt; <span>Shopping cart</span>
     </div>
-    <br>
+    <div class="main-cart-container">
+        <h1 class="main-cart-h">CART</h1>
+        <div class="main-cart-item">
+            <img class="main-cart-img" src="./media/Img/main-jacket.jpg" alt="image of jacket">
 
-
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-
-
-
-
-    <div class="our-concept">
-        <div class="concept-row">
-            <div class="square square-1">
-                <h2 class="concept-heading">OUR CONCEPT</h2>
-                <p>Each concept has its focus on nature where quality meets challenge</p>
+            <div class="main-item-details">
+                <h2 class="main-item-details-h2">PILGRIM ANORAK JACKET</h2>
+                <p><strong>COLOUR :</strong> DIRTY GREEN</p>
+                <p><strong>SIZE :</strong> L</p>
             </div>
-            <div class="square">
-                <img src="./media/Img/image-1.jpg" alt="Image of walking around mountains " class="our-img">
+            <div class="quantity-section">
+                <label for="quantity">Quantity</label>
+                <div class="quantity-buttons">
+                    <button class="quantity-btn">-</button>
+                    <input type="text" id="quantity" value="1">
+                    <button class="quantity-btn">+</button>
+                </div>
             </div>
-
-            <div class="square">
-                <img src="./media/Img/image-2.jpg" alt="Image of walking around mountains" class="our-img">
+            <div class="price">
+                <p>PRICE</p>
+                <span class="price-item"><strong>2999,-</strong></span>
+            </div>
+            <div class="remove">
+                <a href="#">REMOVE</a>
             </div>
         </div>
-        <div class="concept-row">
-            <div class="square">
-                <img src="./media/Img/image-3.jpg" alt="Image of walking around mountains" class="our-img">
+
+        <div class="main-cart-summary">
+            <div class="left-options">
+                <p class="empty-cart">EMPTY CART</p>
             </div>
-            <div class="square">
-                <img src="./media/Img/image-4.jpg" alt="Image of walking around mountains" class="our-img">
-            </div>
-            <div class="square">
-                <img src="./media/Img/image-5.jpg" alt="Image of walking around mountains" class="our-img">
+            <div class="right-options">
+                <div class="cart-actions">
+                    <p class="update-cart">UPDATE CART</p>
+                    <p class="continue-shopping">CONTINUE SHOPPING</p>
+                </div>
+                <p class="price">
+                    <strong>Total price:</strong> <span><strong>2999,-</strong></span>
+                </p>
+                <p class="mva">MVA included (30%)</p>
+                <a href="checkout.html">
+                    <button class="main-cart-checkout-btn">PROCEED TO CHECKOUT</button>
+                </a>
             </div>
         </div>
     </div>
 
-    <div class="suggest">
-        <h2 class="suggest-h2">SUGGESTED PRODUCTS</h2>
-        <div class="suggest-images">
-            <div class="suggest-item">
-                <img src="./media/Img/main-jacket.jpg" alt="image of jacket" class="suggest-img">
 
-
-                <p class="suggest-text">WOLFHOUND Hoodie 2799kr</p>
-                <button class="add-to-cart-btn" data-item-name="WOLFHOUND Hoodie" data-item-price="2799">Add to
-                    Cart</button>
-            </div>
-            <div class="suggest-item">
-                <img src="./media/Img/jacket-2.jpg" alt="image of jacket" class="suggest-img">
-                <p class="suggest-text">PILGRIM Anorak Jacket 2599kr</p>
-                <button class="add-to-cart-btn" data-item-name="WOLFHOUND Hoodie" data-item-price="2799">Add to
-                    Cart</button>
-            </div>
-            <div class="suggest-item">
-                <img src="./media/Img/jacket-3.jpg" alt="image of jacket" class="suggest-img">
-                <p class="suggest-text">DURACANVAS Jacket 2999kr</p>
-                <button class="add-to-cart-btn" data-item-name="WOLFHOUND Hoodie" data-item-price="2799">Add to
-                    Cart</button>
-            </div>
-            <div class="suggest-item">
-                <img src="./media/Img/jacket-4.jpg" alt="image of jacket" class="suggest-img">
-                <p class="suggest-text">Silence Proshell Jacket 1799kr</p>
-                <button class="add-to-cart-btn" data-item-name="WOLFHOUND Hoodie" data-item-price="2799">Add to
-                    Cart</button>
-            </div>
-        </div>
-    </div>
 
     <footer class="footer-container">
         <div class="footer-wrapper">
@@ -207,7 +160,7 @@
                 <li><a href="#">Shipping</a></li>
                 <li><a href="#">Returns</a></li>
                 <li><a href="#">Status</a></li>
-                <li><a href="jacket-details.html">Payment</a></li>
+                <li><a href="#">Payment</a></li>
             </ul>
         </div>
 
@@ -276,18 +229,54 @@
             });
         });
 
+        const cart = {
+            items: [],
+            addItem(name, price) {
+                const existingItem = this.items.find(item => item.name === name);
+                if (existingItem) {
+                    existingItem.quantity += 1;
+                } else {
+                    this.items.push({ name, price, quantity: 1 });
+                }
+                this.updateCartDisplay();
+            },
+            updateCartDisplay() {
+                const cartItemsContainer = document.getElementById('cart-items');
+                const cartTotalPrice = document.getElementById('cart-total-price');
+                let total = 0;
 
-        let slideIndex = 0;
-        showSlides();
+                cartItemsContainer.innerHTML = '';
+                this.items.forEach(item => {
+                    const itemElement = document.createElement('div');
+                    itemElement.classList.add('cart-item');
+                    itemElement.innerHTML = `
+                <p>${item.name} - ${item.price} kr (x${item.quantity})</p>
+                <button class="remove-item" data-item-name="${item.name}">Remove</button>
+            `;
+                    cartItemsContainer.appendChild(itemElement);
+                    total += item.price * item.quantity;
+                });
+                cartTotalPrice.textContent = total;
+            }
+        };
 
-        function showSlides() {
-            const slides = document.querySelectorAll('.slide');
-            slides.forEach((slide) => (slide.style.display = 'none'));
-            slideIndex++;
-            if (slideIndex > slides.length) { slideIndex = 1; }
-            slides[slideIndex - 1].style.display = 'block';
-            setTimeout(showSlides, 5000);
-        }
+        // Event Listener for Adding Items
+        document.querySelectorAll('.add-to-cart-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const itemName = button.getAttribute('data-item-name');
+                const itemPrice = parseInt(button.getAttribute('data-item-price'));
+                cart.addItem(itemName, itemPrice);
+            });
+        });
+
+        // Quantity Update Buttons
+        document.querySelectorAll('.quantity-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const input = button.parentNode.querySelector('#quantity');
+                const currentQuantity = parseInt(input.value);
+                input.value = button.textContent === '+' ? currentQuantity + 1 : Math.max(currentQuantity - 1, 1);
+            });
+        });
     </script>
 
 
